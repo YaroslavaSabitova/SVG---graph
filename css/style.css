@@ -6,38 +6,6 @@
   font-weight: normal;
 }
 
-@font-face {
-  font-family: "GothamProBold";
-  src: url("../fonts/GothamProBold/GothamProBold.eot");
-  src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProBold/GothamProBold.woff") format("woff"), url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "GothamProBlack";
-  src: url("../fonts/GothamProBlack/GothamProBlack.eot");
-  src: url("../fonts/GothamProBlack/GothamProBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProBlack/GothamProBlack.woff") format("woff"), url("../fonts/GothamProBlack/GothamProBlack.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "GothamProMedium";
-  src: url("../fonts/GothamProMedium/GothamProMedium.eot");
-  src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"), url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "GothamProLight";
-  src: url("../fonts/GothamProLight/GothamProLight.eot");
-  src: url("../fonts/GothamProLight/GothamProLight.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProLight/GothamProLight.woff") format("woff"), url("../fonts/GothamProLight/GothamProLight.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
 *, ::after, ::before {
   margin: 0;
   padding: 0;
@@ -66,37 +34,94 @@ body {
 
 .canvas__icon {
   position: absolute;
-  top: 5rem;
-  right: 38rem;
+  top: 4rem;
+  right: 37.5rem;
   background-color: #ccc9c9;
   -webkit-background-clip: text;
   color: transparent;
-  font-size: 6.5rem;
+  font-size: 7rem;
   transition: .5s;
 }
 
 .canvas__icon:hover {
-  font-size: 6.7rem;
+  font-size: 7.5rem;
   background-color: #9a9999;
 }
 
 .canvas__text {
-  position: absolute;
-  top: 14rem;
-  right: 36.5rem;
-  color: #000000;
-  font-size: 5rem;
+  position: relative;
 }
 
-.canvas__text span {
+.canvas__text_num {
+  position: absolute;
+  top: -10rem;
+  right: 19rem;
+  color: #000000;
+  font-size: 7rem;
+}
+
+.canvas__text_num span {
   font-size: .5em;
 }
 
-.canvas__text__percent {
+.canvas__text_percent {
   position: absolute;
-  top: -.5rem;
-  right: 0rem;
+  top: -10rem;
+  right: 19rem;
+  font-size: 3rem;
   color: #9a9999;
+}
+
+.canvas__text_black {
+  position: absolute;
+  top: -3rem;
+  right: 15rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.canvas__text_yellow {
+  position: absolute;
+  top: 4rem;
+  right: .23rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffdd00;
+  width: 20rem;
+  line-height: 140%;
+}
+
+.canvas__text_grey {
+  font-family: "Arial", sans-serif;
+  position: absolute;
+  top: 4.2rem;
+  right: 9rem;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+  color: #9a9999;
+  width: 32rem;
+  line-height: 125%;
+}
+
+.canvas__text_green {
+  position: absolute;
+  right: 13rem;
+  color: #56a803;
+  font-size: 2.5rem;
+  line-height: 200%;
+}
+
+.canvas__triangle {
+  position: absolute;
+  top: 11.8rem;
+  right: 26rem;
+  width: 0;
+  height: 0;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-bottom: 0.9rem solid #56a803;
+  border-radius: 1rem;
 }
 
 .unit {
