@@ -208,3 +208,67 @@ body {
   stroke: #9a9999;
   stroke-width: 2;
 }
+
+.chart__display {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.chart__display span {
+  margin-right: .5rem;
+  color: #ccc9c9;
+  font-weight: 300;
+}
+
+.chart__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 35rem;
+  position: absolute;
+  top: 47rem;
+  right: 22rem;
+  font-family: "Arial", sans-serif;
+  font-weight: 700;
+}
+
+.chart__info-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 19.6rem;
+  padding-top: .9rem;
+}
+
+.chart__info-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 23rem;
+}
+
+.chart__info-nums {
+  margin-right: 1.5rem;
+}
+
+.chart__info-nums p {
+  margin-bottom: .5rem;
+}
+
+.chart__info__icon {
+  background-color: #9a9999;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+}
+
+.chart__info-table {
+  width: 15rem;
+  height: 6rem;
+  background-color: #e9e9e9;
+  border-radius: .5rem;
+  border: 0.1rem solid #ccc9c9;
+}

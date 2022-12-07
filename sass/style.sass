@@ -161,7 +161,6 @@ body
     &:hover
         stroke-width: 1.8
 
-
 .line
     position: absolute
     top: 23rem
@@ -169,3 +168,51 @@ body
     fill: none
     stroke: $color-dark-grey
     stroke-width: 2
+
+.chart__display
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    span
+        margin-right: .5rem
+        color: $color-grey
+        font-weight: 300
+
+.chart__info
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    width: 35rem
+    position: absolute
+    top: 47rem
+    right: 22rem
+    font-family: "Arial", sans-serif
+    font-weight: 700
+    &-left
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        flex-direction: column
+        height: 19.6rem
+        padding-top: .9rem
+    &-right
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-direction: column
+        height: 23rem
+    &-nums
+        margin-right: 1.5rem
+        p
+            margin-bottom: .5rem
+    &__icon
+        background-color: $color-dark-grey
+        -webkit-background-clip: text
+        color: transparent
+        font-size: 2rem
+    &-table
+        width: 15rem
+        height: 6rem
+        background-color: $color-light-grey
+        border-radius: .5rem
+        border: .1rem solid $color-grey
