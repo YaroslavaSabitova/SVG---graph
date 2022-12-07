@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "GothamProRegular";
+  src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+  src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"), url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "GothamProBold";
+  src: url("../fonts/GothamProBold/GothamProBold.eot");
+  src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProBold/GothamProBold.woff") format("woff"), url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "GothamProBlack";
+  src: url("../fonts/GothamProBlack/GothamProBlack.eot");
+  src: url("../fonts/GothamProBlack/GothamProBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProBlack/GothamProBlack.woff") format("woff"), url("../fonts/GothamProBlack/GothamProBlack.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "GothamProMedium";
+  src: url("../fonts/GothamProMedium/GothamProMedium.eot");
+  src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"), url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "GothamProLight";
+  src: url("../fonts/GothamProLight/GothamProLight.eot");
+  src: url("../fonts/GothamProLight/GothamProLight.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProLight/GothamProLight.woff") format("woff"), url("../fonts/GothamProLight/GothamProLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "GothamProRegular", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #000000;
+}
+
+.canvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.canvas__icon {
+  position: absolute;
+  top: 5rem;
+  right: 38rem;
+  background-color: #ccc9c9;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 6.5rem;
+  transition: .5s;
+}
+
+.canvas__icon:hover {
+  font-size: 6.7rem;
+  background-color: #9a9999;
+}
+
+.canvas__text {
+  position: absolute;
+  top: 14rem;
+  right: 36.5rem;
+  color: #000000;
+  font-size: 5rem;
+}
+
+.canvas__text span {
+  font-size: .5em;
+}
+
+.canvas__text__percent {
+  position: absolute;
+  top: -.5rem;
+  right: 0rem;
+  color: #9a9999;
+}
+
+.unit {
+  fill: none;
+  transition: .5s;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+}
+
+.unit-1 {
+  stroke: #ffdd00;
+  stroke-dasharray: 36 64;
+  stroke-dashoffset: 20;
+}
+
+.unit-1:hover {
+  stroke: #f3c702;
+}
+
+.unit-2 {
+  stroke: #56a803;
+  stroke-dasharray: 25 100;
+  stroke-dashoffset: -16;
+}
+
+.unit-2:hover {
+  stroke: #499201;
+}
+
+.unit-3 {
+  stroke: #e9e9e9;
+  stroke-dasharray: 28 100;
+  stroke-dashoffset: -41;
+}
+
+.unit-3:hover {
+  stroke: #ccc9c9;
+}
+
+.unit:hover {
+  stroke-width: 1.8;
+}
