@@ -16,6 +16,8 @@ $color-dark-yellow: #f3c702
 $color-green: #56a803
 $color-dark-green: #499201
 
+$text-shadow: 1px 1px 2px $color-dark-green
+
 *, ::after, ::before
     margin: 0
     padding: 0
@@ -80,6 +82,9 @@ body
             color: #ffdd00
             width: 20rem
             line-height: 140%
+            transition: .5s
+            &:hover
+                color: $color-dark-yellow
         &_grey
             font-family: "Arial", sans-serif
             position: absolute
@@ -91,22 +96,44 @@ body
             color: #9a9999
             width: 32rem
             line-height: 125%
-        &_green
+    &__green
+        position: relative
+        &-text
+            font-family: "Arial", sans-serif
             position: absolute
-            right: 13rem
+            top: 8.2rem
+            right: 22rem
             color: $color-green
             font-size: 2.5rem
             line-height: 200%
-    &__triangle
-        position: absolute
-        top: 11.8rem
-        right: 26rem
-        width: 0
-        height: 0
-        border-left: 1rem solid transparent
-        border-right: 1rem solid transparent
-        border-bottom: .9rem solid $color-green
-        border-radius: 1rem
+            transition: 1s
+        &-triangle
+            position: absolute
+            top: 10rem
+            right: 26.5rem
+            width: 0
+            height: 0
+            border-left: 1rem solid transparent
+            border-right: 1rem solid transparent
+            border-bottom: .9rem solid $color-green
+            border-radius: 1rem
+            transition: .5s
+
+.canvas__green:hover > .canvas__green-triangle
+    animation: 1s ease-in-out jumping
+    backface-visibility: hidden
+
+.canvas__green:hover > .canvas__green-text
+    text-shadow: $text-shadow
+    transform: scale(1.02)
+
+@keyframes jumping
+    0%
+        transform: translateY(7px)
+    50%
+        transform: translateY(-10px)
+    100%
+        transform: translateY(0)
 
 .unit
     fill: none
@@ -133,3 +160,12 @@ body
             stroke: $color-grey
     &:hover
         stroke-width: 1.8
+
+
+.line
+    position: absolute
+    top: 23rem
+    left: 17rem
+    fill: none
+    stroke: $color-dark-grey
+    stroke-width: 2
