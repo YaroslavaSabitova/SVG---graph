@@ -359,6 +359,9 @@ body {
     right: 17.5rem;
     font-size: 6.5rem;
   }
+  .canvas__icon:hover {
+    font-size: 7rem;
+  }
   .canvas__text_num {
     right: 17rem;
     font-size: 5rem;
