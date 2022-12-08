@@ -334,3 +334,56 @@ body {
 .chart__info-table_red:hover::after {
   background: #d03636;
 }
+
+@media (max-width: 500px) {
+  html {
+    font-size: 40%;
+  }
+  .chart {
+    width: 40rem;
+    height: 40rem;
+  }
+  .canvas__icon {
+    top: 2rem;
+    right: 17.5rem;
+    font-size: 6.5rem;
+  }
+  .canvas__text_num {
+    right: 17rem;
+    font-size: 5rem;
+  }
+  .canvas__text_percent {
+    right: 17rem;
+    font-size: 2rem;
+  }
+  .canvas__text_black {
+    top: -5rem;
+    right: 11rem;
+    font-size: 3rem;
+  }
+  .canvas__text_yellow {
+    line-height: none;
+    font-size: 2rem;
+    right: -3.2rem;
+  }
+  .canvas__text_grey {
+    top: 2.1rem;
+    right: 4rem;
+  }
+  .canvas__green-text {
+    top: 5.5rem;
+    right: 16rem;
+  }
+  .canvas__green-triangle {
+    top: 7.3rem;
+    right: 20.5rem;
+  }
+  .line {
+    display: none;
+  }
+  .chart__info {
+    width: 33rem;
+    top: 40rem;
+    right: 4rem;
+  }
+}

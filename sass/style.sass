@@ -265,3 +265,48 @@ body
             &:hover::after
                 background: $color-red
 
+    
+@media (max-width: 500px)
+    html
+        font-size: 40%
+
+    .chart
+        width: 40rem
+        height: 40rem
+
+    .canvas
+        &__icon
+            top: 2rem
+            right: 17.5rem
+            font-size: 6.5rem
+        &__text_num
+            right: 17rem
+            font-size: 5rem
+        &__text_percent
+            right: 17rem
+            font-size: 2rem
+        &__text_black
+            top: -5rem
+            right: 11rem
+            font-size: 3rem
+        &__text_yellow
+            line-height: none
+            font-size: 2rem
+            right: -3.2rem
+        &__text_grey
+            top: 2.1rem
+            right: 4rem
+        &__green-text
+            top: 5.5rem
+            right: 16rem
+        &__green-triangle
+            top: 7.3rem
+            right: 20.5rem
+
+    .line
+        display: none
+
+    .chart__info
+        width: 33rem
+        top: 40rem
+        right: 4rem
