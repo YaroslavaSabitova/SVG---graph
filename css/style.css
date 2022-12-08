@@ -343,6 +343,17 @@ body {
     width: 40rem;
     height: 40rem;
   }
+  .chart__info {
+    width: 33rem;
+    top: 40rem;
+    right: 3rem;
+  }
+  .line {
+    height: 39.2rem;
+    width: 4rem;
+    top: 15rem;
+    left: -1rem;
+  }
   .canvas__icon {
     top: 2rem;
     right: 17.5rem;
@@ -377,13 +388,5 @@ body {
   .canvas__green-triangle {
     top: 7.3rem;
     right: 20.5rem;
-  }
-  .line {
-    display: none;
-  }
-  .chart__info {
-    width: 33rem;
-    top: 40rem;
-    right: 4rem;
   }
 }
